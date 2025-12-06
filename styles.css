@@ -1,50 +1,239 @@
-*{
-    margin: 0px;
-    padding: 0px;
+/* Import fonts */
+@import url('https://fonts.cdnfonts.com/css/apple-garamond');
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
     background-color: #F7F4EE;
+    font-family: 'Apple Garamond', serif;
+    color: #2C2E33;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header > div:first-child {
+    background-color: #2C2E33;
+    color: #F7F4EE;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Hero section */
+#hero {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 #hero img {
-  width: 100% !important;
-  height: 400px !important;
-  object-fit: cover !important;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
 }
 
-#intro img{
-    height: 50px;
-    width: 50px;
-    object-position: right; 
+/* Navigation */
+nav {
+    background-color: #C37B47;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-#intro{
+nav div:first-child img {
+    height: 40px;
+}
+
+nav div:last-child {
+    background-color: transparent;
+}
+
+nav a {
+    color: #F7F4EE;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    background-color: transparent;
+}
+
+nav a:hover {
+    color: #A7D129;
+}
+
+/* Intro section */
+#intro {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
+    padding: 4rem 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-#intro .text{
-    flex: 1;
-
-}
-
-#intro img{
+#intro .text {
     flex: 1;
 }
 
-#gear{
+#intro .text h1 {
+    font-size: 2.5rem;
+    color: #2C2E33;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+#intro .text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2C2E33;
+}
+
+#intro .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro .image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Gear section */
+#gear {
+    background-color: #2C2E33;
+    padding: 4rem 3rem;
+    margin: 3rem 0;
+}
+
+#gear h2 {
+    color: #F7F4EE;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    grid-column: 1 / -1;
+}
+
+#gear > div {
+    background-color: #F7F4EE;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gear > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#gear h3 {
+    color: #C37B47;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#gear p {
+    color: #2C2E33;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#gear {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin: 3rem;
 }
 
-#gear h2{
-    grid-column: 1/-1 ;
-    text-align:center;
-    margin-bottom: 1.5 rem;
+/* Safety section */
+#safety {
+    background-image: url('images/safety.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 6rem 3rem;
+    margin: 3rem 0;
 }
 
+#safety::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(247, 244, 238, 0.3);
+}
+
+#safety h2 {
+    position: relative;
+    color: #2C2E33;
+    text-align: center;
+    font-size: 2.5rem;
+    z-index: 1;
+}
+
+#safety p {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #2C2E33;
+}
+
+/* Respect section */
+#respect {
+    background-image: url('images/respect.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 6rem 3rem;
+    margin: 3rem 0;
+}
+
+#respect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(247, 244, 238, 0.3);
+}
+
+#respect h2 {
+    position: relative;
+    color: #2C2E33;
+    text-align: center;
+    font-size: 2.5rem;
+    z-index: 1;
+}
+
+#respect p {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #2C2E33;
+}
 
 /*gear page*/
 
@@ -175,4 +364,75 @@ cream #F7F4EE
     border-left: 251px solid transparent;
     border-right: 251px solid transparent;
     border-top: 80px solid #2C2E33 ;
+}
+
+/* Footer */
+footer {
+    background-color: #2C2E33;
+    color: #F7F4EE;
+    padding: 3rem 2rem 1rem;
+    text-align: center;
+}
+
+footer p {
+    background-color: transparent;
+    color: #F7F4EE;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+footer strong {
+    background-color: transparent;
+    color: #A7D129;
+}
+
+footer a {
+    background-color: transparent;
+    color: #C37B47;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #A7D129;
+}
+
+footer small {
+    background-color: transparent;
+    color: #F7F4EE;
+    display: block;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #C37B47;
+}
+
+footer #year {
+    background-color: transparent;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #intro {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+    }
+    
+    #intro .text h1 {
+        font-size: 2rem;
+    }
+    
+    #gear {
+        grid-template-columns: 1fr;
+        padding: 2rem 1.5rem;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    #hero img {
+        height: 250px;
+    }
 }
