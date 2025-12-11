@@ -254,6 +254,8 @@ cream #F7F4EE
 }
 #gear_page section {
     margin: 0;
+    margin-bottom: 70px;
+    margin-top: 50px;
     justify-items: center;
     align-items:flex-start;
 }
@@ -277,6 +279,10 @@ cream #F7F4EE
 #descension {
     height: 400px;
     margin-bottom: 30px;
+}
+#descension img, #knots img {
+    border-radius: 5px;
+    border: solid 4px #C37B47;
 }
 #gear_page h2 {
     font-size: 3em;
@@ -332,13 +338,18 @@ cream #F7F4EE
 #gear_page h4 {
     text-align: center;
     padding-top: 10px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+
 }
 #gear_page h3 {
     text-align: center;
     padding-bottom: 10px;
     font-size: 2em;
 
+}
+#big_banner p {
+    height: 340px;
 }
 #knots {
 
