@@ -366,6 +366,69 @@ cream #F7F4EE
     border-top: 80px solid #2C2E33 ;
 }
 
+/* Safety & Respect Page Styles */
+.content-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 3rem;
+}
+
+.content-section h2 {
+    font-size: 3rem;
+    color: #2C2E33;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.section-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subsection {
+    margin-bottom: 3rem;
+}
+
+.subsection h3 {
+    font-size: 2rem;
+    color: #C37B47;
+    margin-bottom: 1rem;
+}
+
+.subsection p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2C2E33;
+    margin-bottom: 1rem;
+}
+
+.subsection ul {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.subsection li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2C2E33;
+    margin-bottom: 0.5rem;
+}
+
+.subsection strong {
+    color: #7B991E;
+}
+
+.divider {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #C37B47, transparent);
+    margin: 4rem 0;
+}
+
+
 /* Footer */
 footer {
     background-color: #2C2E33;
@@ -410,7 +473,7 @@ footer #year {
     background-color: transparent;
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
     #intro {
         flex-direction: column;
@@ -436,3 +499,4 @@ footer #year {
         height: 250px;
     }
 }
+
